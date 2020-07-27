@@ -5,12 +5,13 @@
 </template>
 <script>
 export default {
-  method: {
+  methods: {
     logout () {
       // 清空tokenz
       window.sessionStorage.clear()
       // 跳转到登录页面
       this.$router.push('/login')
+      console.log('跳转到')
     }
   }
 }
